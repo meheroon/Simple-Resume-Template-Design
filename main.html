@@ -3,81 +3,251 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Resume Template</title>
+  <title>Resume of Meherun Nessa</title>
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+
+    /* Wrapper to center content */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header styles */
+    header {
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    header h3 {
+      font-size: 20px;
+      color: #777;
+    }
+
+    .profile-image {
+      border-radius: 50%;
+      margin-top: 15px;
+      border: 3px solid #f2f2f2;
+      padding: 2px;
+    }
+
+    /* Main content layout with two columns */
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .left-column, .right-column {
+      width: 48%;
+    }
+
+    /* Section headers */
+    h3 {
+      font-size: 22px;
+      color: #444;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    /* List styles */
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    ul li strong {
+      color: #333;
+    }
+
+    ul li a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* HR for section dividers */
+    hr {
+      border: 0;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+
+    /* Footer for contact information */
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+
+     /* Project Section */
+     .projects-section {
+      margin-top: 40px;
+    }
+
+    .projects-section h3 {
+      font-size: 24px;
+      color: #444;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .projects-section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .projects-section ul li {
+      margin-bottom: 10px;
+    }
+
+    .projects-section ul li strong {
+      color: #333;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+
+      .left-column, .right-column {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .footer {
+        font-size: 12px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <table width="100%" cellpadding="10">
-    <tr>
-      <td colspan="2" align="center">
-        <h1>Meherun Nessa</h1>
-        <img src="assets\images\profilepic.jpg" alt="My Picture" width="100" height="100" style="border-radius: 50%;">
-        <h3>Junior Full Stack Developer</h3>
-      </td>
-    </tr>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <h1>Meherun Nessa Ferdausi</h1>
+      <img src="assets/images/profilepic.jpg" alt="My Picture" width="100" height="100" class="profile-image">
+      <h3>Intern - Full Stack Development</h3>
+    </header>
 
-    <!-- Contact Information -->
-    <tr>
-      <td width="50%" valign="top">
-        <h3>Contact Information</h3>
-        <ul>
-          <li><strong>Email:</strong> dearoleander@example.com</li>
-          <li><strong>Phone:</strong> 123-456-7890</li>
-          <li><strong>Website:</strong> www.oleander.com</li>
-          <li><strong>Address:</strong> 123 Main Street, City, Country</li>
-        </ul>
-      </td>
+    <!-- Main content with left and right columns -->
+    <div class="main-content">
 
-      <!-- Education and Skills -->
-      <td width="50%" valign="top">
-        <h3>Education</h3>
-        <ul>
-          <li><strong>Bachelor of Science in Computer Science</strong><br>Daffodil International University, 2013</li>
-          <li><strong>H.S.C</strong><br>Ideal School & College, 2006</li>
-          <li><strong>S.S.C</strong><br>Bawany Adarsha Viddalaya, 2004</li>
-        </ul>
+      <!-- Left Column: Contact, Education, and Skills -->
+      <div class="left-column">
+        <div class="section">
+          <h3>Contact Information</h3>
+          <ul>
+            <li><strong>Email:</strong> dearoleander@gmail.com</li>
+            <li><strong>Phone:</strong> +880123456789</li>
+            <li><strong>Address:</strong>  Mirpur, Dhaka</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/meherun-nessa-ferdausi-52b2b41b0/" target="_blank">Meherun Nessa</a></li>
+          </ul>
+        </div>
 
-        <h3>Technical Skills</h3>
-        <ul>
-          <li><strong>Languages:</strong> HTML, CSS, JavaScript</li>
-          <li><strong>Frameworks:</strong> React, Node.js</li>
-          <li><strong>Tools:</strong> Git, VS Code</li>
-        </ul>
-      </td>
-    </tr>
-
-    <tr>
-      <td colspan="2">
         <hr>
-        <h3>Work Experience</h3>
-        <ul>
-          <li><strong>Front-End Developer - ABC Corp (2022-Present)</strong>
-            <ul>
-              <li>Developed responsive web applications using HTML, CSS, and JavaScript.</li>
-              <li>Worked in a team to create user-friendly UI/UX designs.</li>
-              <li>Collaborated with back-end developers to integrate APIs.</li>
-            </ul>
-          </li>
-          <li><strong>Intern - XYZ Inc (2021-2022)</strong>
-            <ul>
-              <li>Assisted with web development projects.</li>
-              <li>Created web pages and debugged existing pages.</li>
-              <li>Participated in daily stand-up meetings and agile processes.</li>
-            </ul>
-          </li>
-        </ul>
-      </td>
-    </tr>
 
-    <tr>
-      <td colspan="2">
+        <div class="section">
+          <h3>Education</h3>
+          <ul>
+            <li><strong>B.Sc in CSE</strong><br>Daffodil International University, 2010–2013</li>
+            <li><strong>GPA:</strong> 2.7</li>
+          </ul>
+        </div>
+
         <hr>
-        <h3>Projects</h3>
-        <ul>
-          <li><strong>Portfolio Website</strong>: A personal portfolio to showcase web development skills (HTML, CSS, JavaScript). <a href="https://www.johndoe.com">View Project</a></li>
-          <li><strong>Task Manager App</strong>: A productivity app using React and Node.js for back-end services. <a href="https://github.com/johndoe/task-manager">View Project</a></li>
-        </ul>
-      </td>
-    </tr>
-  </table>
+
+        <div class="section">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li><strong>Frontend:</strong> HTML/CSS, React.js, Flutter</li>
+            <li><strong>Backend:</strong> Laravel, CodeIgniter, Python</li>
+            <li><strong>Database:</strong> MySQL</li>
+            <li><strong>Tools:</strong> Postman, Visual Studio Code, Bootstrap, Git</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Column: Work Experience, Projects -->
+      <div class="right-column">
+        <div class="section">
+          <h3>Work Experience</h3>
+          <ul>
+            <li><strong>Intern - Full Stack Development</strong><br>Gnilab Ltd (2023-Present)
+              <ul>
+                <li>Managing full-stack development.</li>
+                <li>Designing the front-end web interface.</li>
+                <li>Assisting in redesigning the existing interface to improve user experience.</li>
+                <li>Diagnosing and fixing issues in mobile (Flutter) and web applications (React, Laravel, CodeIgniter).</li>
+                <li>Developed 2 full-stack web applications using React, Laravel, and Flutter.</li>
+                <li>Integrated MySQL for database management and implemented RESTful APIs.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <hr>
+
+        <div class="section">
+          <h3>Relevant Courses</h3>
+          <ul>
+            <li>Wordpress Skill Development</li>
+            <li>Learning Design Thinking</li>
+            <li>Digital Marketing</li>
+            <li>Full Stack Web Development with Python, Django, React (running)</li>
+            <li>React: The Complete Guide (includes next.js, Resux)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+     <!-- Project Details Section -->
+     <div class="projects-section">
+      <h3>Project Details</h3>
+      <ul>
+        <li><strong>Project 1: Full Stack Web Application</strong><br>Developed a full-stack web application using React and Laravel. Implemented user authentication, dynamic content display, and database management.</li>
+        <li><strong>Project 2: Mobile Application</strong><br>Worked with Flutter to create a mobile app that integrates with web APIs for user management and real-time data processing.</li>
+        <li><strong>Project 3: E-Commerce Website</strong><br>Built an e-commerce website using React and Laravel, integrating a shopping cart, order management, and payment gateway.</li>
+      </ul>
+    </div>
+
+    
+
+
+    <div class="footer">
+      <p>Made with ❤️ | All rights reserved &copy; 2025</p>
+    </div>
+  </div>
 </body>
 </html>
